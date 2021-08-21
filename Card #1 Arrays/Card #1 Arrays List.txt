@@ -1,4 +1,36 @@
 // LeetCode arrays 
 
-// #0485 Max Consecutive Ones
-// https://leetcode.com/problems/max-consecutive-ones/
+1) #0485 Max Consecutive Ones
+https://leetcode.com/problems/max-consecutive-ones/
+
+2) #1295 Find Numbers with Even Number of Digits
+
+3) #0977 Squares of a Sorted Array
+
+4) #1089 Duplicate Zeros
+
+5) #0088 Merge Sorted Array 
+
+6) #0027 Remove Element 
+
+7) #0026 Remove Duplicates from Sorted Array
+
+8) #1346 Check If N and Its Double Exist
+
+9) #0941 Valid Mountain Array
+
+10) #1299 Replace Elements with Greatest Element on Right Side
+
+11) 
+
+12) #0283 Move Zeroes
+
+13) #0905 Sort Array By Parity 
+
+14) 
+
+15) #1051 Height Checker
+
+16) #0414 Third Maximum Number
+
+17) #0448 Find All Numbers Disappeared in an Array 
