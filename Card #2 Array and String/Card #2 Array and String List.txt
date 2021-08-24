@@ -1,0 +1,43 @@
+LeetCode Arrays & Strings - 1
+
+1) #0724 Find Pivot Index  
+
+2) #0747 Largest Number At Least Twice of Others 
+
+3) #0066 Plus One
+
+4) #0498 Diagonal Traverse
+
+5) #0054 Spiral Matrix
+
+6) #0118 Pascal's Triangle
+
+7) #0067 Add Binary
+
+8) #0028 Implement strStr()
+
+9) #0014 Longest Common Prefix
+
+10) #0344 Reverse String
+
+11) #0561 Array Partition I
+
+12) #0167 Two Sum II - Input array is sorted
+
+13) #0027 Remove Element
+
+14) #0485 Max Consecutive Ones
+
+15) #0209 Minimum Size Subarray Sum
+
+16) #0189 Rotate Array
+
+17) #0119 Pascal's Triangle II
+
+18) #0151 Reverse Words in a String
+
+19) #0557 Reverse Words in a String III
+
+20) #0026 Remove Duplicates from Sorted Array
+
+21) #0283 Move Zeroes 
