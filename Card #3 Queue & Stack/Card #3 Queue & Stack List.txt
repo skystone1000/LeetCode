@@ -1,0 +1,15 @@
+LeetCode Queue & Stack 1
+
+1) #0622 Design Circular Queue 
+
+2) #0200 Number of Islands
+
+3) #0752 Open the Lock 
+
+4) #0279 Perfect Squares
+
+5) #0155 Min Stack
+
+6) #0020 Valid Parentheses
+
+7) #0739 Daily Temperatures
