@@ -1,0 +1,16 @@
+Extra Array Problems
+
+01) #1365 How Many Numbers Are Smaller Than the Current Number
+02) #1313 Decompress Run-Length Encoded List
+03) #1389 Create Target Array in the Given Order
+04) #1534 Count Good Triplets
+05) #1266 Minimum Time Visiting All Points
+06) #1252 Cells with Odd Values in a Matrix
+07) #0832 Flipping an Image
+08) #1351 Count Negative Numbers in a Sorted Matrix
+09) #1304 Find N Unique Integers Sum up to Zero
+10) #1460 Make Two Arrays Equal by Reversing Sub-arrays
+11) #1380 Lucky Numbers in a Matrix
+12) #1491 Average Salary Excluding the Minimum and Maximum Salary
+13) #922 Sort Array By Parity II
+14) #1337 The K Weakest Rows in a Matrix

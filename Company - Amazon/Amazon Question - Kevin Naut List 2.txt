@@ -1,0 +1,185 @@
+Amazon LeetCode Questions By Kevin Nt jr Youtube Playlist
+https://www.youtube.com/playlist?list=PLi9RQVmJD2fZgRyOunLyt94uVbJL43pZ_
+
+01 #0387. First Unique Character in a String 
+https://leetcode.com/problems/first-unique-character-in-a-string/
+
+02 #0136. Single Number
+https://leetcode.com/problems/single-number/
+
+03 #0231. Power of Two
+https://leetcode.com/problems/power-of-two/
+
+04 #0657. Robot Return to Origin
+https://leetcode.com/problems/robot-return-to-origin/
+
+05 #0268. Missing Number
+https://leetcode.com/problems/missing-number/
+
+06 #0122. Best Time to Buy and Sell Stock II
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+
+07 #0112. Path Sum
+https://leetcode.com/problems/path-sum/
+
+08 #0027. Remove Element
+https://leetcode.com/problems/remove-element/
+
++++++++
+00000000000000000000000000000000000000000000000000000000000000
+09 #0070. Climbing Stairs
+https://leetcode.cok m/problems/climbing-stairs/
+
+10 #0017. Letter Combinations of a Phone Number
+https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+
+11 #0235. Lowest Common Ancestor of a Binary Search Tree
+https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
+
+12 #0771. Jewels and Stones
+https://leetcode.com/problems/jewels-and-stones/
+
+00000000000000000000000000000000000000000000000000000000000000
+13 #0011. Container With Most Water
+https://leetcode.com/problems/container-with-most-water/
+
+14 #0733. Flood Fill
+https://leetcode.com/problems/flood-fill/
+
+00000000000000000000000000000000000000000000000000000000000000
+15 #0206. Reverse Linked List (Already Done)
+https://leetcode.com/problems/reverse-linked-list/
+
+16 #0819. Most Common Word
+https://leetcode.com/problems/most-common-word/
+
+17 #0929. Unique Email Addresses
+https://leetcode.com/problems/unique-email-addresses/
+
+18 #0253. Meeting Rooms II (Premium)
+https://leetcode.com/problems/meeting-rooms-ii/
+
+00000000000000000000000000000000000000000000000000000000000000
+19 #0973. K Closest Points to Origin
+https://leetcode.com/problems/k-closest-points-to-origin/
+
+00000000000000000000000000000000000000000000000000000000000000
+20 #0695. Max Area of Island
+https://leetcode.com/problems/max-area-of-island/
+
++++++++
+00000000000000000000000000000000000000000000000000000000000000
+21 #0403. Frog Jump
+https://leetcode.com/problems/frog-jump/
+
++++++++
+00000000000000000000000000000000000000000000000000000000000000
+22 #0023. Merge k Sorted Lists
+https://leetcode.com/problems/merge-k-sorted-lists/
+
+23 #0049. Group Anagrams
+https://leetcode.com/problems/group-anagrams/
+
+24 #0062. Unique Paths
+https://leetcode.com/problems/unique-paths/
+
+00000000000000000000000000000000000000000000000000000000000000
+25 #198. House Robber
+https://leetcode.com/problems/house-robber/
+
+26 #0113. Path Sum II
+https://leetcode.com/problems/path-sum-ii/
+
+27 #0100. Same Tree
+https://leetcode.com/problems/same-tree/
+
+28 #0104. Maximum Depth of Binary Tree
+https://leetcode.com/problems/maximum-depth-of-binary-tree/
+
+29 #0101. Symmetric Tree
+https://leetcode.com/problems/symmetric-tree/
+
+30 #0286. Walls and Gates (Premium)
+https://leetcode.com/problems/walls-and-gates/
+
+31 #0905. Sort Array By Parity
+https://leetcode.com/problems/sort-array-by-parity/
+
+32 #0040. Combination Sum II
+https://leetcode.com/problems/combination-sum-ii/
+
+// Going On
+33 #0079. Word Search
+https://leetcode.com/problems/word-search/
+
+34 #0763. Partition Labels
+https://leetcode.com/problems/partition-labels/
+
+35 #0014. Longest Common Prefix
+https://leetcode.com/problems/longest-common-prefix/
+
+36 #0078. Subsets
+https://leetcode.com/problems/subsets/
+
+37 #0021. Merge Two Sorted Lists
+https://leetcode.com/problems/merge-two-sorted-lists/
+
+00000000000000000000000000000000000000000000000000000000000000
+38 #0322. Coin Change
+https://leetcode.com/problems/coin-change/
+
+39 #0199. Binary Tree Right Side View
+https://leetcode.com/problems/binary-tree-right-side-view/
+
+40 #1119. Remove Vowels from a String (Premium)
+https://leetcode.com/problems/remove-vowels-from-a-string/
+
+41 #0064. Minimum Path Sum
+https://leetcode.com/problems/minimum-path-sum/
+
+42 #0257. Binary Tree Paths
+https://leetcode.com/problems/binary-tree-paths/
+
+43 #0345. Reverse Vowels of a String
+https://leetcode.com/problems/reverse-vowels-of-a-string/
+
+44 #0160. Intersection of Two Linked Lists
+https://leetcode.com/problems/intersection-of-two-linked-lists/
+
+45 #0938. Range Sum of BST
+https://leetcode.com/problems/range-sum-of-bst/
+
+46 #1046. Last Stone Weight
+https://leetcode.com/problems/last-stone-weight/
+
+47 #1167. Minimum Cost to Connect Sticks (Premium)
+https://leetcode.com/problems/minimum-cost-to-connect-sticks/
+AIE 2.4 Minimum Cost of ropes (Same question)
+https://practice.geeksforgeeks.org/problems/minimum-cost-of-ropes-1587115620/1#
+
+48 #0415. Add Strings
+https://leetcode.com/problems/add-strings/
+
+49 #0098. Validate Binary Search Tree
+https://leetcode.com/problems/validate-binary-search-tree/
+
+50 #1007. Minimum Domino Rotations For Equal Row
+https://leetcode.com/problems/minimum-domino-rotations-for-equal-row/
+
++++++++++++++++
+00000000000000000000000000000000000000000000000000000000000000
+51 #0767. Reorganize String
+https://leetcode.com/problems/reorganize-string/
+
+00000000000000000000000000000000000000000000000000000000000000
+52 #0735. Asteroid Collision
+https://leetcode.com/problems/asteroid-collision/
+
+53 #0572. Subtree of Another Tree
+https://leetcode.com/problems/subtree-of-another-tree/
+
+54 #0443. String Compression
+https://leetcode.com/problems/string-compression/
+
+55 #0056. Merge Intervals
+https://leetcode.com/problems/merge-intervals/

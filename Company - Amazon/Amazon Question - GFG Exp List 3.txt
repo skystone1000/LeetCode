@@ -1,0 +1,358 @@
+Amazon Question - GFG Exp List 3
+GFG Amazon Intern Experiences Questions
+https://docs.google.com/document/d/1vcuMefKIDTWfu_gl_89ozUbQpXYEsIgzTVHJzZqZscs/edit
+
+Solutions for Questions Except LeetCode are present in
+Coding Problems -> Other -> Amazon GFG Extra Ques(mylist)
+
+(EXP 5, 8 Not done)
+
+1.1 Overlapping Intervals 
+https://practice.geeksforgeeks.org/problems/overlapping-intervals4919/1
+#0056. Merge Intervals
+https://leetcode.com/problems/merge-intervals/
+
+1.2 Josephus problem 
+https://practice.geeksforgeeks.org/problems/josephus-problem/1
+#0390. Elimination Game
+https://leetcode.com/problems/elimination-game/
+
+1.3 Maximum Rectangular Area in a Histogram
+https://practice.geeksforgeeks.org/problems/maximum-rectangular-area-in-a-histogram/0
+#0084. Largest Rectangle in Histogram
+https://leetcode.com/problems/largest-rectangle-in-histogram/
+
+1.4 Boundary Traversal of binary tree 
+https://practice.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1
+#0545. Boundary of Binary Tree(Premium)
+https://leetcode.com/problems/boundary-of-binary-tree/
+
+1.5 Maximum sum Rectangle
+https://practice.geeksforgeeks.org/problems/maximum-sum-rectangle/0
+#0085. Maximal Rectangle
+https://leetcode.com/problems/maximal-rectangle/
+#0363. Max Sum of Rectangle No Larger Than K
+https://leetcode.com/problems/max-sum-of-rectangle-no-larger-than-k/
+
+1.6 #0987. Vertical Order Traversal of a Binary Tree
+https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/
+https://www.geeksforgeeks.org/vertical-sum-in-a-given-binary-tree/
+
+1.7 Serialize and Deserialize a Binary Tree
+https://practice.geeksforgeeks.org/problems/serialize-and-deserialize-a-binary-tree/1
+#0297. Serialize and Deserialize Binary Tree
+https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
+
+1.8 Interleaved Strings 
+https://practice.geeksforgeeks.org/problems/interleaved-strings/1
+#0097. Interleaving String
+https://leetcode.com/problems/interleaving-string/
+
+1.9 Probability of Knight
+https://practice.geeksforgeeks.org/problems/probability-of-knight/0
+#0688. Knight Probability in Chessboard
+https://leetcode.com/problems/knight-probability-in-chessboard/
+
+
+======================================================================================
+
+2.1 Find the Next Greater Element
+https://practice.geeksforgeeks.org/problems/next-larger-element/0
+
+2.2  Mirror Tree 
+https://practice.geeksforgeeks.org/problems/mirror-tree/1
+#0226. Invert Binary Tree
+https://leetcode.com/problems/invert-binary-tree/
+
+2.3 Similar to first but dont know
+
+2.4  Minimum Cost of ropes 
+https://practice.geeksforgeeks.org/problems/minimum-cost-of-ropes/0
+#1167. (Premium) Minimum Cost to Connect Sticks
+https://leetcode.com/problems/minimum-cost-to-connect-sticks/
+
+======================================================================================
+
+3.1 Given an array of numbers, arrange them in an alternate fashion such that 
+every number is followed by a number of opposite sign. Also the order was to be maintained. 
+If the count of negative numbers is more keep the extra at last in array and same for 
+positive numbers.
+
+3.2 String of characters as arranged in a cellphone Print all combinations for 
+given number of digits(k) in lexicographical order. (See 11.2 )
+Possible words from Phone digits (Premium) (Already Done)
+https://practice.geeksforgeeks.org/problems/possible-words-from-phone-digits/0
+#0017. Letter Combinations of a Phone Number
+https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+
+3.3 Design a shuffle function which would play songs randomly in your device 
+(unique song_id) and code it. (Look 9.6)
+
+3.4 Add two linked lists. (Already Done)
+#0002. Add Two Numbers
+https://leetcode.com/problems/add-two-numbers/
+
+3.5 largest subtree which is binary search tree in a given Binary Tree.
+
+3.6 #0138 Copy List with Random Pointer
+https://leetcode.com/problems/copy-list-with-random-pointer/
+
+
+======================================================================================
+
+4.1 Maximize Number of 1's 
+https://practice.geeksforgeeks.org/problems/maximize-number-of-1s0905/1
+#1004. Max Consecutive Ones III
+https://leetcode.com/problems/max-consecutive-ones-iii/
+
+4.2 Circular tour
+https://practice.geeksforgeeks.org/problems/circular-tour/1
+#0134. Gas Station
+https://leetcode.com/problems/gas-station/
+
+4.3 Position of rightmost set bit
+https://www.geeksforgeeks.org/position-of-rightmost-set-bit/
+TechDose - https://www.youtube.com/watch?v=Ztt-VtNyqL8
+
+4.4 Binary Tree Insertion and deletion
+
+4.5 Add two numbers represented by linked lists (Already Done)
+https://practice.geeksforgeeks.org/problems/add-two-numbers-represented-by-linked-lists/1
+
+4.6 Search in a matrix
+https://practice.geeksforgeeks.org/problems/search-in-a-matrix17201720/1
+#0074. Search a 2D Matrix
+https://leetcode.com/problems/search-a-2d-matrix/
+
+======================================================================================
+
+
+6.1 GCD of more than two (or array) numbers
+https://www.geeksforgeeks.org/gcd-two-array-numbers/
+
+6.2 Largest Sum Contiguous Subarray
+https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
+#0053. Maximum Subarray
+https://leetcode.com/problems/maximum-subarray/
+
+6.3 Find next greater number with same set of digits
+https://www.geeksforgeeks.org/find-next-greater-number-set-digits/
+#0031. Next Permutation
+https://leetcode.com/problems/next-permutation/
+
+6.4 Sliding Window Maximum (Maximum of all subarrays of size k)
+https://www.geeksforgeeks.org/sliding-window-maximum-maximum-of-all-subarrays-of-size-k/
+#0239. Sliding Window Maximum
+https://leetcode.com/problems/sliding-window-maximum/
+
+6.5 Iterative Postorder Traversal | Set 2 (Using One Stack)
+https://www.geeksforgeeks.org/iterative-postorder-traversal-using-stack/
+#0145. Binary Tree Postorder Traversal
+https://leetcode.com/problems/binary-tree-postorder-traversal/
+
+6.6 You are at the beginning of the array, you can either take 1 jump or arr[i] jumps at 
+each step, you have to return the minimum number of steps to reach the end of the array. {DP}
+Minimum number of jumps 
+https://practice.geeksforgeeks.org/problems/minimum-number-of-jumps-1587115620/1
+#0045. Jump Game II
+https://leetcode.com/problems/jump-game-ii/
+
+6.7 Given a string, find its first non-repeating character (Already Done)
+https://www.geeksforgeeks.org/given-a-string-find-its-first-non-repeating-character/
+#0387. First Unique Character in a String
+https://leetcode.com/problems/first-unique-character-in-a-string/
+
+
+======================================================================================
+
+7.1 Tree Traversal Spiral Order
+https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1
+https://www.youtube.com/watch?v=vjt5Y6-1KsQ
+
+7.2 each cell has positive or negative numbers. Starting from the top left cell, reach the 
+bottom-right cell with an optimum path such that maximum positive sum is received.
+#0064. Minimum Path Sum   (Already Done)
+https://leetcode.com/problems/minimum-path-sum/
+#0062. Unique Paths
+https://leetcode.com/problems/unique-paths/
+
+7.3 BST, initially two nodes are swapped. Now correct the BST. - 
+https://www.geeksforgeeks.org/fix-two-swapped-nodes-of-bst/
+#0099. Recover Binary Search Tree
+https://leetcode.com/problems/recover-binary-search-tree/
+
+7.4 #0268 Missing Number (Already Done)
+https://leetcode.com/problems/missing-number/
+
+7.5 Design a data structure that supports insert, delete, search and getRandom in constant time
+#0380. Insert Delete GetRandom O(1)
+https://leetcode.com/problems/insert-delete-getrandom-o1/
+
+https://www.geeksforgeeks.org/design-a-data-structure-that-supports-insert-delete-search-and-getrandom-in-constant-time/
+
+
+======================================================================================
+
+
+9.1 Reach a given score
+https://practice.geeksforgeeks.org/problems/reach-a-given-score-1587115621/1
+
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000
+9.2 Smallest distinct window 
+https://practice.geeksforgeeks.org/problems/smallest-distant-window/0
+#0076. Minimum Window Substring
+https://leetcode.com/problems/minimum-window-substring/
+
+
+9.3 Problem 1
+9.4 problem 2
+
+
+9.5 Minimum number of jumps - (Look 6.6)
+https://practice.geeksforgeeks.org/problems/minimum-number-of-jumps/0
+#0045. Jump Game II
+https://leetcode.com/problems/jump-game-ii/
+
+9.6 - #0384. Shuffle an Array
+https://leetcode.com/problems/shuffle-an-array/
+Shuffle a given array using Fisher–Yates shuffle Algorithm
+https://www.geeksforgeeks.org/shuffle-a-given-array-using-fisher-yates-shuffle-algorithm/
+
+9.7 Next Permutation (Look 6.3)
+https://practice.geeksforgeeks.org/problems/next-permutation/0
+#0031. Next Permutation
+https://leetcode.com/problems/next-permutation/
+
+9.8 Wildcard Pattern Matching
+https://practice.geeksforgeeks.org/problems/wildcard-pattern-matching/1
+#0044. Wildcard Matching
+https://leetcode.com/problems/wildcard-matching/
+
+======================================================================================
+
+
+10.1 Next Permutation (Look 6.3)
+https://practice.geeksforgeeks.org/problems/next-permutation/0
+
+10.2 Evaluation of Postfix Expression
+https://practice.geeksforgeeks.org/problems/evaluation-of-postfix-expression/0
+#0150. Evaluate Reverse Polish Notation
+https://leetcode.com/problems/evaluate-reverse-polish-notation/
+https://www.youtube.com/watch?v=qN8LPIcY6K4
+
+10.3 Diagonal Traversal of Binary Tree
+https://practice.geeksforgeeks.org/problems/diagonal-traversal-of-binary-tree/1
+
+10.4 Subarray with 0 sum 
+https://practice.geeksforgeeks.org/problems/subarray-with-0-sum-1587115621/1
+#0560. Subarray Sum Equals K
+https://leetcode.com/problems/subarray-sum-equals-k/
+
+10.5 Key Pair 
+https://practice.geeksforgeeks.org/problems/key-pair/0
+Different - #0001. Two Sum
+https://leetcode.com/problems/two-sum/
+
+10.6 Find a pair with given target in BST 
+https://practice.geeksforgeeks.org/problems/find-a-pair-with-given-target-in-bst/1
+#0653. Two Sum IV - Input is a BST
+https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
+
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000
+10.7 Maximum Width of Tree 
+https://practice.geeksforgeeks.org/problems/maximum-width-of-tree/1
+#0662. Maximum Width of Binary Tree
+https://leetcode.com/problems/maximum-width-of-binary-tree/
+
+10.8 Next larger element (Look 2.1)
+https://practice.geeksforgeeks.org/problems/next-larger-element-1587115620/1
+
+10.9 Spirally traversing a matrix 
+https://practice.geeksforgeeks.org/problems/spirally-traversing-a-matrix-1587115621/1
+#0054. Spiral Matrix
+https://leetcode.com/problems/spiral-matrix/
+
+10.10 K largest elements
+https://practice.geeksforgeeks.org/problems/k-largest-elements3736/1
+https://www.youtube.com/watch?v=3DdP6Ef8YZM
+https://www.geeksforgeeks.org/k-largestor-smallest-elements-in-an-array/
+
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000
+10.11 Alien Dictionary 
+https://practice.geeksforgeeks.org/problems/alien-dictionary/1
+
+10.12 Lowest Common Ancestor in a Binary Tree (Already Done)
+https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1
+#0236. Lowest Common Ancestor of a Binary Tree
+https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
+
+======================================================================================
+
+Check Doc more ques there
+
+11.1 Reverse words in a given string
+https://practice.geeksforgeeks.org/problems/reverse-words-in-a-given-string/0
+
+11.2 Possible words from Phone digits (Premium) (Already Done)
+https://practice.geeksforgeeks.org/problems/possible-words-from-phone-digits/0
+#0017. Letter Combinations of a Phone Number
+https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+
+11.3 Remove BST keys outside the given range
+https://www.geeksforgeeks.org/remove-bst-keys-outside-the-given-range/
+#0669. Trim a Binary Search Tree
+https://leetcode.com/problems/trim-a-binary-search-tree/
+
+11.4 Level order traversal in spiral form (Look 7.1)
+https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1
+
+
+======================================================================================
+
+
+12.1 Print Anagrams Together (Already Done)
+https://practice.geeksforgeeks.org/problems/print-anagrams-together/1
+#0049. Group Anagrams
+https://leetcode.com/problems/group-anagrams/
+
+12.2 Diameter of Binary Tree 
+https://practice.geeksforgeeks.org/problems/diameter-of-binary-tree/1
+#0543. Diameter of Binary Tree
+https://leetcode.com/problems/diameter-of-binary-tree/
+
+12.3 Insert a node in a BST (Check 4.4 also) (Already Done) (Card Binary Search tree - 05)
+https://practice.geeksforgeeks.org/problems/insert-a-node-in-a-bst/1
+#0701. Insert into a Binary Search Tree
+https://leetcode.com/problems/insert-into-a-binary-search-tree/
+
+
+12.4 Lowest Common Ancestor in a Binary Tree (Already Done) (Amazon List 1 - 05)
+https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-binary-tree/1
+
+12.5 Kadane's Algorithm 
+https://practice.geeksforgeeks.org/problems/kadanes-algorithm/0
+#0053. Maximum Subarray
+https://leetcode.com/problems/maximum-subarray/
+
+12.6 Stock buy and sell (Already Done)
+https://practice.geeksforgeeks.org/problems/stock-buy-and-sell/0
+#0122. Best Time to Buy and Sell Stock II
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+
+00000000000000000000000000000000000000000000000000000000000000000000000000000000000
+12.7 Maximum Profit 
+https://practice.geeksforgeeks.org/problems/maximum-profit4657/1
+#0123. Best Time to Buy and Sell Stock III
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/
+#0188. Best Time to Buy and Sell Stock IV
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/
+
+12.8 What is copy constructor in CPP
+https://www.geeksforgeeks.org/copy-constructor-in-cpp/
+
+12.9 LRU Cache (Already Done)
+https://practice.geeksforgeeks.org/problems/lru-cache/1
+
+12.10 Search in a matrix
+https://practice.geeksforgeeks.org/problems/search-in-a-matrix17201720/1
+

@@ -1,0 +1,93 @@
+Blogspot Amazon Questions List 1
+https://techyield.blogspot.com/2019/07/amazon-list-of-leetcode-questions.html
+
+01) #0001 Two Sum
+    https://leetcode.com/problems/two-sum/
+02) #0146 LRU Cache
+    https://leetcode.com/problems/lru-cache/
+03) #0200 Number of Islands
+    https://leetcode.com/problems/lru-cache/
+04) #0005 Longest Palindromic Substring
+    https://leetcode.com/problems/longest-palindromic-substring/
+05) #0236 Lowest Common Ancestor of a Binary Tree
+    https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
+06) #0002 Add Two Numbers
+    https://leetcode.com/problems/add-two-numbers/
+07) #0127 Word Ladder
+    https://leetcode.com/problems/word-ladder/
+08) #0206 Reverse Linked List
+    https://leetcode.com/problems/reverse-linked-list/
+09) Serialize and Deserialize Binary Tree
+    https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
+10) #0020 Valid Parentheses
+    https://leetcode.com/problems/valid-parentheses/
+11) #0017 Letter Combinations Of a Phone Number
+    https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+12) #0138 Copy List With Random Pointer
+    https://leetcode.com/problems/copy-list-with-random-pointer/
+13) #0003 Longest Substring With Out Repeating Characters
+    https://leetcode.com/problems/longest-substring-without-repeating-characters/
+14) #0042 Trapping Rain Water
+    https://leetcode.com/problems/trapping-rain-water/
+15) Min Stack
+    https://leetcode.com/problems/min-stack/
+16) Lowest Common Ancestor Of a Binary Search Tree
+    https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
+17) #0048 Rotate Image
+    https://leetcode.com/problems/rotate-image/
+18) #0121 Best Time To Buy And Sell Stock
+    https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+19) #0098 Validate Binary Search Tree
+    https://leetcode.com/problems/validate-binary-search-tree/
+20) Word Break
+    https://leetcode.com/problems/word-break/
+21) Linked List Cycle
+    https://leetcode.com/problems/linked-list-cycle/
+22) #0049 Group Anagrams
+    https://leetcode.com/problems/group-anagrams/
+23) #0015 3Sum
+    https://leetcode.com/problems/3sum/
+24) Product Of Array Except Self
+    https://leetcode.com/problems/product-of-array-except-self/
+25) Valid Anagram
+    https://leetcode.com/problems/valid-anagram/
+26) Sliding Window Maximum
+    https://leetcode.com/problems/sliding-window-maximum/
+27) #0240 Search A 2D Matrix
+    https://leetcode.com/problems/search-a-2d-matrix-ii/
+28) #0021 Merge Two Sorted Lists
+    https://leetcode.com/problems/merge-two-sorted-lists/
+29) #0023 Merge K Sorted Lists
+    https://leetcode.com/problems/merge-k-sorted-lists/
+30) #0126 Word Ladder II
+    https://leetcode.com/problems/word-ladder-ii/
+31) #0215 Kth Largest Element In An Array
+    https://leetcode.com/problems/kth-largest-element-in-an-array/
+32) #0234 Palindrome Linked List
+    https://leetcode.com/problems/palindrome-linked-list/
+33) #0160 Intersection Of Two Linked Lists
+    https://leetcode.com/problems/intersection-of-two-linked-lists/
+34) #0078 Subsets
+    https://leetcode.com/problems/subsets/
+35) #0008 String To Integer
+    https://leetcode.com/problems/string-to-integer-atoi/
+36) #0387 First Unique Character In a String
+    https://leetcode.com/problems/first-unique-character-in-a-string/
+37) #0102 Binary Tree Level Order Traversal
+    https://leetcode.com/problems/binary-tree-level-order-traversal/
+38) #0204 Count Primes
+    https://leetcode.com/problems/count-primes/
+39) #0089 Gray Code
+    https://leetcode.com/problems/gray-code/
+40) #0167 Two Sum Input Array Is Sorted
+    https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+41) #0380 Insert Delete Get In Random O(1)
+    https://leetcode.com/problems/insert-delete-getrandom-o1/
+42) #0199 Binary Tree Right Side View
+    https://leetcode.com/problems/binary-tree-right-side-view/
+43) #0355 Design Twitter
+    https://leetcode.com/problems/design-twitter/
+44) Reverse Words In A String II (Premium)
+    https://leetcode.com/problems/reverse-words-in-a-string-ii/
+45) #0396 Rotate Function
+    https://leetcode.com/problems/rotate-function/
