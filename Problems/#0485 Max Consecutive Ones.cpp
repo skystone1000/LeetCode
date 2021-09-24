@@ -1,5 +1,6 @@
 // LeetCode arrays 1
 // #0485 Max Consecutive Ones
+// https://leetcode.com/problems/max-consecutive-ones/
 
 class Solution {
 public:
