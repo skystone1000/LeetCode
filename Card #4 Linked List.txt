@@ -1,0 +1,33 @@
+LeetCode Queue & Stack 1
+
+1) #0707 Design Linked List
+
+2) #0141 Linked List Cycle
+
+3) #0142 Linked List Cycle II
+
+4) #0160 Intersection of Two Linked Lists
+
+5) #0019 Remove Nth Node From End of List
+
+6) #0206 Reverse Linked List
+
+7) #0203 Remove Linked List Elements
+
+8) #0328 Odd Even Linked List
+
+9) #0234 Palindrome Linked List
+
+10) #0707 Design Linked List (Doubly Linked List)
+
+11) #0021 Merge Two Sorted Lists
+
+12) #0002 Add Two Numbers
+
+13) #0430 Flatten a Multilevel Doubly Linked List
+
+14)
+
+15) Copy List with Random Pointer
+
+16) Rotate List

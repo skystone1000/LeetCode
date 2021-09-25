@@ -1,4 +1,5 @@
 // Company Amazon
+// Linked List 12
 // 06 #0002 Add Two Numbers
 // https://leetcode.com/problems/add-two-numbers/
 
@@ -12,25 +13,38 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
-class Solution {
+struct ListNode{
+    int val;
+    ListNode* next;
+    ListNode(int x){
+        val = x;
+        next = nullptr;
+    }
+}
+
+class Solution{
 public:
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        ListNode dummy{0};
-        auto curr = &dummy;
-        
+    ListNode* addTwoNumbers(ListNode* headA, ListNode* headB){
+        // reverse the LL if the number are not.
+
+        ListNode dummy(-1);
+        ListNode* curr = &dummy; 
+
         int carry = 0;
-        while(l1 || l2 || carry){
-            int a = l1 ? l1->val:0;
-            int b = l2 ? l2->val:0;
-            int val = carry + a + b;
-            
-            curr->next = new ListNode(val % 10);
-            carry = val / 10;
-            l1 = l1 ? l1->next : NULL;
-            l2 = l2 ? l2->next : NULL;
+        while(headA || headB || carry){
+            int a = headA != NULL ? headA->val : 0;
+            int b = headB != NULL ? headB->val : 0;
+
+            int sum = a + b + carry;
+
+            curr->next = new ListNode(sum % 10); 
+            int carry = sum / 10;
+
+            headA = headA != NULL ? headA->next : NULL;
+            headB = headB != NULL ? headB->next : NULL;
             curr = curr->next;
         }
-        
+
         return dummy.next;
     }
 };

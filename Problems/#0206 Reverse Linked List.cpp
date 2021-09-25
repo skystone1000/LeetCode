@@ -12,6 +12,20 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+
+// Stack solution remaining
+
+
+
+
+
+
+
+
+
+
+
+
 class Solution1 {
 public:
     ListNode* reverseList(ListNode* head) {
