@@ -1,0 +1,25 @@
+LeetCode Card #7 Binary Search
+
+01 #0704 Binary Search
+
+02 #0069 Sqrt(x)
+
+03 #0374 Guess Number Higher or Lower
+
+04 #0033 Search in Rotated Sorted Array
+
+05 #0278 First Bad Version
+
+06 #0162 Find Peak Element
+
+07 #0153 Find Minimum in Rotated Sorted Array
+
+08 #0034 Search for a Range
+
+09 #0658 Find K Closest Elements
+
+10 #0162 Find Peak Element
+
+11 #0050 Pow(x, n)
+
+12 #0367 Valid Perfect Square

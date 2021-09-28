@@ -71,7 +71,7 @@ public:
 };
 */
 
-// Check how it is ddiff tha sol 3
+// Check how it is diff than sol 3
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {

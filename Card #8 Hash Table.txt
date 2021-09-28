@@ -1,0 +1,15 @@
+LeetCode Card #8 Hash Table
+
+01 #0705 Design HashSet
+
+02 #0706 Design HashMap
+
+03 #0217 Contains Duplicate
+
+04 #0136 Single Number
+
+05 #0349 Intersection of Two Arrays
+
+06 #0202 Happy Number
+
+07 #0001 Two Sum

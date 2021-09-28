@@ -6,18 +6,18 @@ class Solution {
 public:
     int singleNumber(vector<int>& nums) {
         // Method 1
-        // unordered_map<int,int> freq;
-        // for(int i=0;i<nums.size();i++){
-        //     freq[nums[i]]++;
-        // }
+        unordered_map<int,int> freq;
+        for(int i=0;i<nums.size();i++){
+            freq[nums[i]]++;
+        }
         
-        // for(auto ele:freq){
-        //     cout<<ele.first<<" "<<ele.second<<endl;
-        //     if(ele.second != 2){
-        //         return ele.first;
-        //     }
-        // }
-        // return -1;
+        for(auto ele:freq){
+            cout<<ele.first<<" "<<ele.second<<endl;
+            if(ele.second != 2){
+                return ele.first;
+            }
+        }W
+        return -1;
         
         // Method 2
         int num = nums[0];

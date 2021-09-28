@@ -1,4 +1,4 @@
-LeetCode Queue & Stack 1
+LeetCode Card #4 Linked List
 
 1) #0707 Design Linked List
 
