@@ -5,67 +5,66 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Approach 3 - Hashmap - O(n)
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        map<int,int> mp;
         vector<int> ans;
+        unordered_map<int,int> seen;
         for(int i=0;i<nums.size();i++){
-            mp.insert({nums[i],i});
-            
-            int complement = target - nums[i];
-            if(mp.count(complement) != 0){
-                if(i != mp[complement]){
-                    ans.push_back(i);
-                    ans.push_back(mp[complement]);
-                    return ans;
-                }
+            if(seen.find(target - nums[i]) != seen.end()){
+                ans.push_back(i);
+                ans.push_back(seen[target - nums[i]]);
+                return ans;
+            }else{
+                seen.insert({nums[i],i});
             }
         }
-        
         return ans;
     }
 };
 
-
 /*
-class Solution2 {
+// Approach 2 - Sorting - O(nlogn)
+class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        map<int,int> mp;
+        vector<pair<int,int>> temp;
         for(int i=0;i<nums.size();i++){
-            mp.insert({nums[i],i});
+            temp.push_back({nums[i],i});
         }
         
         vector<int> ans;
-        for(int i=0;i<nums.size();i++){
-            int complement = target - nums[i];
-            if(mp.count(complement) != 0){
-                if(i != mp[complement]){
-                    ans.push_back(i);
-                    ans.push_back(mp[complement]);
-                    return ans;
-                }
+        sort(temp.begin(), temp.end());
+        int i=0, j=nums.size()-1;
+        while(i<j){
+            if(temp[i].first + temp[j].first == target){
+                ans.push_back(temp[i].second);
+                ans.push_back(temp[j].second);
+                return ans;
+            } else if(temp[i].first + temp[j].first < target){
+                i++;
+            } else{
+                j--;
             }
         }
-        
         return ans;
     }
 };
-*/
-    
-/*
-class Solution3 {
+
+// Approach 1 - Brute Force - O(n^2)
+class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
         vector<int> ans;
         for(int i=0;i<nums.size();i++){
             for(int j=0;j<nums.size();j++){
-                if(i==j) continue;
-                if(nums[i] + nums[j] == target){
-                    ans.push_back(i);
-                    ans.push_back(j);
-                    return ans;
+                if(i!=j){
+                    if(nums[i]+nums[j] == target){
+                        ans.push_back(i);
+                        ans.push_back(j);
+                        return ans;
+                    }
                 }
             }
         }
@@ -73,22 +72,3 @@ public:
     }
 };
 */
-
-// Check how it is diff than sol 3
-class Solution {
-public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        vector<int> ans;
-        for(int i=0;i<nums.size();i++){
-            ans.push_back(i);
-            for(int j=i+1;j<nums.size();j++){
-                if(nums[i]+nums[j] == target){
-                    ans.push_back(j);
-                    return ans;
-                } 
-            }
-            ans.pop_back();
-        }
-        return ans;
-    }
-};
