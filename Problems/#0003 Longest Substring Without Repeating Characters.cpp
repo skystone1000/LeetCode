@@ -5,6 +5,7 @@
 using namespace std;
 
 // Method 2 - Hashset O(n)
+// https://leetcode.com/problems/longest-substring-without-repeating-characters/discuss/376363/CPP-Solution-for-beginners-or-O(n)-time-or-Longest-Substring-without-repeating-characters
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
