@@ -4,13 +4,30 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Method 3 - Sliding Window
+// Time - O(N), Space - O(1)
 class Solution {
 public:
     int maxPower(string s) {
-        if(s.size() == 0){
-            return 0;
+        int power = 1;
+        for(int i = 0; i < s.size(); ) {
+            int j = i + 1;
+            while(j < s.size() && s[j] == s[j-1])
+                j++;
+            power = max(power, j-i);
+            // ensures we dont repeat iteration over same element again
+            i = j;                             
         }
-        
+        return power;
+    }
+};
+
+/*
+// Method 2 - One pass solution
+// Time - O(N), Space - O(1)
+class Solution {
+public:
+    int maxPower(string s) {
         int power = 1;
         int currMax = 1;
         for(int i=1;i<s.size();i++){
@@ -31,6 +48,25 @@ public:
     }
 };
 
+// Method 1 - Brute force
+// Time - O(N^2), Space - O(1)
+class Solution {
+public:
+    int maxPower(string s) {
+        int power = 0;
+        for(int i = 0; i < s.size(); i++) {
+            int j = i + 1;
+            // Going till we have same character
+            while(j < s.size() && s[j] == s[j-1])  
+                j++;
+            power = max(power, j-i);                  
+        }
+        return power;
+    }
+};
+*/
+
+// Method 2 Alternative
 class Solution {
 public:
     int maxPower(string s) {
