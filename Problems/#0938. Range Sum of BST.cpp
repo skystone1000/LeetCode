@@ -2,18 +2,20 @@
 // 45 #0938. Range Sum of BST
 // https://leetcode.com/problems/range-sum-of-bst/
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
+#include<bits/stdc++.h>
+using namespace std;
 
+// Definition for a binary tree node.
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode() : val(0), left(nullptr), right(nullptr) {}
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+};
+
+// Method 2 - Iterative (BFS)
 class Solution {
 public:
     int rangeSumBST(TreeNode* root, int low, int high) {
@@ -25,23 +27,18 @@ public:
         while(!qu.empty()){
             TreeNode* curr = qu.front();
             qu.pop();
-            if(curr->val >= low && curr->val <= high){
+            if(curr->val >= low && curr->val <= high)
                 sum += curr->val;
-            }
-            
-            if(curr->left != NULL && curr->val > low){
+            if(curr->left != NULL && curr->val > low)
                 qu.push(curr->left);
-            }
-            if(curr->right != NULL && curr->val < high){
+            if(curr->right != NULL && curr->val < high)
                 qu.push(curr->right);
-            }
         }
-        
-        
         return sum;
     }
 };
 
+// Method 1 - Recursive
 class Solution {
 public:
     int rangeSumBST(TreeNode* root, int low, int high) {
@@ -55,10 +52,11 @@ public:
             return ;
         }
         
-        inOrd(root->left, sum, low, high);
-        if(root->val >= low && root->val <= high){
+        if(root->val > low)
+            inOrd(root->left, sum, low, high);
+        if(root->val >= low && root->val <= high)
             sum += root->val;
-        }
-        inOrd(root->right, sum, low, high);
+        if(root->val < high)
+            inOrd(root->right, sum, low, high);
     }
 };
