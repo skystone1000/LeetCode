@@ -1,5 +1,6 @@
 // LeetCode arrays 
 
+===== Introduction =====
 1) #0485 Max Consecutive Ones
 https://leetcode.com/problems/max-consecutive-ones/
 
@@ -7,18 +8,22 @@ https://leetcode.com/problems/max-consecutive-ones/
 
 3) #0977 Squares of a Sorted Array
 
+===== Inserting Items into an Array =====
 4) #1089 Duplicate Zeros
 
 5) #0088 Merge Sorted Array 
 
+===== Deleting Items from an Array =====
 6) #0027 Remove Element 
 
 7) #0026 Remove Duplicates from Sorted Array
 
+===== Searching for Items in an Array =====
 8) #1346 Check If N and Its Double Exist
 
 9) #0941 Valid Mountain Array
 
+===== In-Place Operations =====
 10) #1299 Replace Elements with Greatest Element on Right Side
 
 11) 
@@ -29,6 +34,7 @@ https://leetcode.com/problems/max-consecutive-ones/
 
 14) 
 
+===== Conclusion =====
 15) #1051 Height Checker
 
 16) #0414 Third Maximum Number
