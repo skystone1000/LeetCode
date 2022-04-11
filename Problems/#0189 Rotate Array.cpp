@@ -1,8 +1,13 @@
 // LeetCode Arrays & Strings - 16
 // #0189 Rotate Array
+// https://leetcode.com/problems/rotate-array/
+
+#include<bits/stdc++.h>
+using namespace std;
 
 class Solution {
 public:
+    // Extra space
     void rotate(vector<int>& nums, int k) {
         if(nums.size() > 1 && k != 0){ 
             vector<int> ans;
@@ -16,6 +21,16 @@ public:
             }
             nums.clear();
             nums = ans;
+        }
+    }
+
+    // Inplace
+    void rotate(vector<int>& nums, int k) {
+        if (!nums.empty()) {
+            k %= nums.size();
+            reverse(nums.begin(), nums.begin() + nums.size() - k);
+            reverse(nums.begin() + nums.size() - k, nums.end());
+            reverse(nums.begin(), nums.end());
         }
     }
 };
