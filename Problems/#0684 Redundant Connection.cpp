@@ -43,3 +43,36 @@ public:
     }
     
 };
+
+// Method 2
+// Runtime: 6 ms, faster than 86.53% of C++ online submissions for Redundant Connection.
+// Memory Usage: 8.9 MB, less than 73.06% of C++ online submissions for Redundant Connection.
+class Solution {
+public:
+    int parent[10000];
+    
+    int findPar(int node){
+        if(parent[node] == node)
+            return node;
+        return parent[node] = findPar(parent[node]);
+    }
+    
+    vector<int> findRedundantConnection(vector<vector<int>>& edges) {
+        vector<int> res(2,-1);
+        
+        for(int i=0;i<1000;i++)
+            parent[i] = i;
+        
+        for(int i=0;i<edges.size();i++){
+            int x = findPar(edges[i][0]);
+            int y = findPar(edges[i][1]);
+            if(x != y){
+                parent[x] = y;
+            }else{
+                res[0] = edges[i][0];
+                res[1] = edges[i][1];
+            }
+        }
+        return res;
+    }
+};
