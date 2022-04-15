@@ -12,5 +12,5 @@ Extra Array Problems
 10) #1460 Make Two Arrays Equal by Reversing Sub-arrays
 11) #1380 Lucky Numbers in a Matrix
 12) #1491 Average Salary Excluding the Minimum and Maximum Salary
-13) #922 Sort Array By Parity II
+13) #0922 Sort Array By Parity II
 14) #1337 The K Weakest Rows in a Matrix
