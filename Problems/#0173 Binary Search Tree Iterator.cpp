@@ -14,7 +14,37 @@ struct TreeNode {
     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
-// Method 1
+// Method 2 - Space - O(height of tree), avg query time - O(1)
+// Runtime: 40 ms, faster than 46.66% of C++ online submissions for Binary Search Tree Iterator.
+// Memory Usage: 24.1 MB, less than 87.61% of C++ online submissions for Binary Search Tree Iterator.
+class BSTIterator {
+    stack<TreeNode*> myStack; 
+public:
+    BSTIterator(TreeNode* root) {
+        pushAll(root);
+    }
+    
+    int next() {
+        TreeNode* tempNode = myStack.top();
+        myStack.pop();
+        pushAll(tempNode->right);
+        return tempNode->val;
+    }
+    
+    bool hasNext() {
+        return !myStack.empty();      
+    }
+    
+    void pushAll(TreeNode* node){
+        while(node != NULL){
+            myStack.push(node);
+            node = node->left;
+        }
+    }
+};
+
+
+// Method 1 - Space - O(n), avg query time - O(1) 
 // Runtime: 37 ms, faster than 56.32% of C++ online submissions for Binary Search Tree Iterator.
 // Memory Usage: 24.4 MB, less than 10.53% of C++ online submissions for Binary Search Tree Iterator.
 class BSTIterator {
