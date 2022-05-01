@@ -9,10 +9,15 @@ using namespace std;
 class Solution {
 public:
     bool backspaceCompare(string s, string t) {
-        string sf = "", tf = "";
+        if(build(s) == build(t))
+            return true;
+        else
+            return false;
+    }
+    
+    string build(string s){
         stack<char> st;
-
-        // First String
+        string sf = "";
         for(int i=0;i<s.size();i++){
             if(s[i] != '#')
                 st.push(s[i]);
@@ -25,23 +30,6 @@ public:
             st.pop();
         }
         
-        // Second String
-        for(int i=0;i<t.size();i++){
-            if(t[i] != '#')
-                st.push(t[i]);
-            else if(!st.empty())
-                st.pop();
-        }
-        
-        while(!st.empty()){
-            tf += st.top();
-            st.pop();
-        }
-        
-        // Comparing
-        if(sf == tf)
-            return true;
-        else
-            return false;
+        return sf;
     }
 };
