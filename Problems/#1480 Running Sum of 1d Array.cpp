@@ -2,11 +2,13 @@
 // #1480. Running Sum of 1d Array
 // https://leetcode.com/problems/running-sum-of-1d-array/
 
+#include<bits/stdc++.h>
+using namespace std;
+
 // Method 1 (New array solution)
 // Time complexity: O(n)
 // Space complexity: O(n) - But leetcode does not consider this 
 // if it is the array to be returned so it may say O(1).
-
 class Solution {
 public:
     vector<int> runningSum(vector<int>& nums) {
@@ -20,6 +22,23 @@ public:
         return ans;
     }
 };
+
+// Method 2 Variation
+class Solution {
+public:
+    vector<int> runningSum(vector<int>& nums) {
+        vector<int> ans;
+        int currTotal = 0;
+        
+        
+        for(int i=0;i<nums.size();i++){
+            currTotal += nums[i];
+            ans.push_back(currTotal);
+        }
+        return ans;
+    }
+};
+
 
 // Method 2 (In place solution)
 // Time complexity: O(n)
