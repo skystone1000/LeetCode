@@ -1,5 +1,9 @@
 // LeetCode arrays 2
 // #1295 Find Numbers with Even Number of Digits
+// https://leetcode.com/problems/find-numbers-with-even-number-of-digits/
+
+#include<bits/stdc++.h>
+using namespace std;
 
 class Solution {
 public:

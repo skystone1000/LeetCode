@@ -5,6 +5,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// Method 1
 class Solution {
 public:
     int findMaxConsecutiveOnes(vector<int>& nums) {
@@ -24,6 +25,25 @@ public:
         // Exit case with 1
         if(currOnes != 0 && maxOnes < currOnes){
             maxOnes = currOnes;
+        }
+        return maxOnes;
+    }
+};
+
+
+// Method 2
+class Solution {
+public:
+    int findMaxConsecutiveOnes(vector<int>& nums) {
+        int maxOnes = 0;
+        int currOnes = 0;
+        for(int i=0;i<nums.size();i++){
+            if(nums[i] == 1){
+                currOnes++;
+                maxOnes = max(maxOnes,currOnes);
+            }else{
+                currOnes = 0;
+            }
         }
         return maxOnes;
     }

@@ -1,14 +1,21 @@
 // LeetCode arrays 3
 // #0977 Squares of a Sorted Array
+// https://leetcode.com/problems/squares-of-a-sorted-array/
 
+#include<bits/stdc++.h>
+using namespace std;
+
+
+
+// Method 2 - Time O(NlogN) 
 class Solution {
 public:
-    vector<int> sortedSquares(vector<int>& A) {
-        for(int i=0;i<A.size();i++){
-            int temp = A[i];
-            A[i] = temp * temp;
+    vector<int> sortedSquares(vector<int>& nums) {
+        for(int i=0;i<nums.size();i++){
+            nums[i] = nums[i] * nums[i];
         }
-        sort(A.begin(),A.end());
-        return A;
+        
+        sort(nums.begin(), nums.end());
+        return nums;
     }
 };
