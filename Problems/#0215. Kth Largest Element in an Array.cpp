@@ -5,7 +5,7 @@
 using namespace std;
 
 // Method 2 - Max heap
-// Time - 8 ms, Space - 10.5 MB
+// Time - 8 ms AVG O(N), Space - 10.5 MB O(N) can be reduced to O(K)
 class Solution {
 public:
     int findKthLargest(vector<int>& nums, int k) {
