@@ -2,20 +2,13 @@
 // #0027 Remove Element
 // https://leetcode.com/problems/remove-element/
 
-class Solution {
-public:
-    int removeElement(vector<int>& nums, int val) {
-        // Method 0
-        nums.erase(std::remove(nums.begin(), nums.end(), val), nums.end());
-        return nums.size();
-    }
-};
+#include<bits/stdc++.h>
+using namespace std;
 
+// Method 1
 class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {
-        // Method 1
-        /*
         int count = 0;
         for(int i:nums){
             if(i != val){
@@ -24,10 +17,14 @@ public:
             }
         }
         return count;
-        */
-        
-        
-        // Method 2 - Remove unnecessary copy
+    }
+};
+
+
+// Method 2 - Remove unnecessary copy
+class Solution {
+public:
+    int removeElement(vector<int>& nums, int val) {        
         int n = nums.size();
         int i = 0;
         while(i<n) {
@@ -40,5 +37,15 @@ public:
         }
         return n;
         
+    }
+};
+
+// Method 3 - 
+class Solution {
+public:
+    int removeElement(vector<int>& nums, int val) {
+        // Method 0
+        nums.erase(std::remove(nums.begin(), nums.end(), val), nums.end());
+        return nums.size();
     }
 };
