@@ -1,7 +1,12 @@
 // Company Amazon
 // 31 #0905. Sort Array By Parity
+// LeetCode arrays 12
 // https://leetcode.com/problems/sort-array-by-parity/
 
+#include<bits/stdc++.h>
+using namespace std;
+
+// Method 1 - No extra space 2 pointer approach
 class Solution {
 public:
     vector<int> sortArrayByParity(vector<int>& A) {
@@ -16,29 +21,22 @@ public:
     }
 };
 
-/*
-// LeetCode arrays 12
-// #905 Sort Array By Parity 
 
+// Method 2 - Extra space 2 pointer approach
 class Solution {
 public:
-    vector<int> sortArrayByParity(vector<int>& A) {
-        int n = A.size();
-        vector<int> ans;
-        ans.reserve(n);
-        
-        for(int i=0;i<n;i++){
-            if(A[i] % 2 == 0){
-                ans.push_back(A[i]);
-            }
-        }
-        
-        for(int i=0;i<n;i++){
-            if(A[i] % 2 == 1){
-                ans.push_back(A[i]);
+    vector<int> sortArrayByParity(vector<int>& nums) {
+        vector<int> ans(nums.size());
+        int start = 0, end = nums.size()-1;
+        for(int i=0;i<nums.size();i++){
+            if(nums[i] % 2 == 0){
+                ans[start] = nums[i];
+                start++;
+            }else{
+                ans[end] = nums[i];
+                end--;
             }
         }
         return ans;
     }
 };
-*/

@@ -1,6 +1,51 @@
 // LeetCode arrays 16
 // #0414 Third Maximum Number
+// https://leetcode.com/problems/third-maximum-number/
 
+#include<bits/stdc++.h>
+using namespace std;
+
+// Method 1 - Hastset Extra space
+class Solution {
+public:
+    int thirdMax(vector<int>& nums) {
+        set<int> top3;
+        for(int num:nums){
+            top3.insert(num);
+            if(top3.size() > 3)
+                top3.erase(top3.begin());
+        }
+        
+        return top3.size() == 3 ? *top3.begin() : *top3.rbegin();
+    }
+};
+
+// Method 2 - Three variables
+class Solution {
+public:
+    int thirdMax(vector<int>& nums) {
+        long one = LONG_MIN, two = LONG_MIN, three = LONG_MIN;
+        for (int num : nums) {
+            if (num == one || num == two || num == three)
+                continue;
+            
+            if (num > one) {
+                three = two;
+                two = one;
+                one = num;
+            } else if (num > two) {
+                three = two;
+                two = num;
+            } else if (num > three) {
+                three = num;
+            }
+        }
+        return three == LONG_MIN ? one : three;
+    }
+};
+
+
+// Method 3 - In built Functions
 class Solution {
 public:
     int thirdMax(vector<int>& nums) {
@@ -10,10 +55,6 @@ public:
         ip = unique(nums.begin(),nums.end());
         nums.resize(std::distance(nums.begin(), ip)); 
         
-        for(int element:nums){
-            cout<<element<<" ";
-        }
-        cout<<endl;
         if(nums.size() < 3){
             if(nums[0]>nums[1]){
                 return nums[0];
