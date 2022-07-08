@@ -2,7 +2,9 @@
 // AIE 3.6 #0138. Copy List with Random Pointer
 // https://leetcode.com/problems/copy-list-with-random-pointer/submissions/
 
-/*
+#include<bits/stdc++.h>
+using namespace std;
+
 // Definition for a Node.
 class Node {
 public:
@@ -16,7 +18,7 @@ public:
         random = NULL;
     }
 };
-*/
+
 
 class Solution {
 public:
@@ -45,5 +47,46 @@ public:
         }
         
         return dummy.next;
+    }
+};
+
+// Same approach as above
+class Solution {
+public:
+    Node* copyRandomList(Node* head) {
+        if(head == NULL)
+            return head;
+        
+        // Creating new Nodes Just after original
+        Node* itr = head;
+        while(itr != NULL){
+            Node* saveNext = itr->next;
+            itr->next = new Node(itr->val);
+            itr->next->next = saveNext;
+            itr = itr->next->next;
+        }
+        
+        // Updating random pointers
+        itr = head;
+        while(itr != NULL){
+            if(itr->random != NULL)
+                itr->next->random = itr->random->next;
+            itr = itr->next->next;
+        }
+        
+        // removing old links
+        itr = head;
+        Node* newItr = head->next;
+        Node* copyHead = newItr;
+        while(itr->next != NULL && newItr->next != NULL){
+            itr->next = itr->next->next;
+            newItr->next = newItr->next->next;
+            itr = itr->next;
+            newItr = newItr->next;
+        }
+        itr->next = NULL;
+        newItr->next = NULL;
+    
+        return copyHead;
     }
 };
