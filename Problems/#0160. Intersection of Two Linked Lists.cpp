@@ -2,14 +2,32 @@
 // 44 #0160. Intersection of Two Linked Lists
 // https://leetcode.com/problems/intersection-of-two-linked-lists/
 
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
- * };
- */
+#include<bits/stdc++.h>
+using namespace std;
+
+// Definition for singly-linked list.
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode(int x) : val(x), next(NULL) {}
+};
+
+// Space - O(1), Time - O(n+m)
+class Solution {
+public:
+    ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
+        ListNode *p1=headA,*p2=headB;
+        
+        while(p1!=p2){
+            p1 = p1 ? p1->next : headB;
+            p2 = p2 ? p2->next : headA;
+        }
+        
+        return p1;
+    }
+};
+
+// Space - O(1), Time - O(n+m)
 class Solution {
 public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
@@ -33,7 +51,7 @@ public:
     }
 };
 
-
+// Space - O(max(n,m)), Time - O(n+m)
 class Solution {
 public:
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {

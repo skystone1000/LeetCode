@@ -2,16 +2,8 @@
 // 08 #0206 Reverse Linked List
 // https://leetcode.com/problems/reverse-linked-list/
 
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
+#include<bits/stdc++.h>
+using namespace std;
 
 struct ListNode {
     int val;
@@ -21,19 +13,33 @@ struct ListNode {
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
  
-// Stack solution remaining
+// Method 1 - O(N) Space Stack
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head) {
+        if(!head)
+            return NULL;
+        
+        stack<ListNode*> st;
+        while(head != NULL){
+            ListNode* temp = head;
+            st.push(head);
+            head = head->next;
+            temp->next = NULL;
+        }
+        
+        ListNode dummy(0);
+        ListNode *temp = &dummy;
+        while(!st.empty()){
+            temp->next = st.top();
+            temp=temp->next;
+            st.pop();
+        }
+        return dummy.next;
+    }
+};
 
-
-
-
-
-
-
-
-
-
-
-
+// Method 2 - Interative
 class Solution1 {
 public:
     ListNode* reverseList(ListNode* head) {
@@ -52,6 +58,7 @@ public:
     }
 };
 
+// Method 2 - Recursive
 class Solution {
 public:
     ListNode* reverseList(ListNode* head) {
