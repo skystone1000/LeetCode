@@ -1,5 +1,9 @@
 // LeetCode Queue & Stack 1
 // #0622 Design Circular Queue 
+// https://leetcode.com/problems/design-circular-queue/
+
+#include<bits/stdc++.h>
+using namespace std;
 
 class MyCircularQueue {
 private:
