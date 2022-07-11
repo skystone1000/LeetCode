@@ -1,5 +1,9 @@
 // Linked List 01
 // #0707 Design Linked List    
+// https://leetcode.com/problems/design-linked-list/
+
+#include<bits/stdc++.h>
+using namespace std;
 
 struct Node
 {
