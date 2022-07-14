@@ -1,5 +1,9 @@
 // LeetCode Queue & Stack 4
 // #0279 Perfect Squares
+// https://leetcode.com/problems/perfect-squares/
+
+#include<bits/stdc++.h>
+using namespace std;
 
 class Solution {
 public:
