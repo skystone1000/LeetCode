@@ -2,6 +2,17 @@
 // 05 #0236 Lowest Common Ancestor of a Binary Tree
 // https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 
+#include<bits/stdc++.h>
+using namespace std;
+
+// Definition for a binary tree node.
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+};
+
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
