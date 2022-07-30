@@ -5,7 +5,33 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Method 1 - Time O(N)
+// Method 0 - Time O(N)
+class Solution {
+public:
+    vector<int> sortedSquares(vector<int>& nums) {
+        vector<int> ans(nums.size());
+        
+        int back = nums.size()-1;
+        int front = 0;
+        int revItr = nums.size()-1;
+        
+        while(front <= back){
+            if(llabs(nums[front]) > llabs(nums[back])){
+                ans[revItr] = nums[front] * nums[front];
+                front++;
+                revItr--;
+            }else{
+                ans[revItr] = nums[back] * nums[back];
+                back--;
+                revItr--;
+            }
+        }
+        return ans;
+    }
+};
+
+
+// Method 1 - Time O(N) - Space O(N)
 class Solution {
 public:
     vector<int> sortedSquares(vector<int>& nums) {
