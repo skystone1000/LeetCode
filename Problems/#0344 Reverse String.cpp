@@ -1,6 +1,9 @@
 // LeetCode Arrays & Strings - 10
 // #0344 Reverse String    
+// https://leetcode.com/problems/reverse-string/
 
+#include<bits/stdc++.h>
+using namespace std;
 
 class Solution {
 public:
