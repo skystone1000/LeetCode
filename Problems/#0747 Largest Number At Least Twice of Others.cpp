@@ -1,32 +1,33 @@
 // LeetCode Arrays & Strings - 2
 // #0747 Largest Number At Least Twice of Others 
+// https://leetcode.com/problems/largest-number-at-least-twice-of-others/description/
+
+#include<bits/stdc++.h>
+using namespace std;
 
 class Solution {
 public:
     int dominantIndex(vector<int>& nums) {
-        int max=0, max2=0,index;
+        int idx = 0;
+        int largest = 0,secondLargest = 0;
         for(int i=0;i<nums.size();i++){
-            if(nums[i]> max){
-                max2 = max;
-                max = nums[i];
-                index = i;
+            if(nums[i] > largest){
+                secondLargest = largest;
+                largest = nums[i];
+                idx = i;
+                continue;
             }
-            else{
-                if(nums[i] > max2){
-                    max2 = nums[i];
-                }
+
+            if(nums[i]>secondLargest){
+                secondLargest = nums[i];
+                continue;
             }
         }
-        
-        cout<<"Max= "<<max<<endl;
-        cout<<"Max2= "<<max2<<endl;
-        
-        
-        if(max >= 2*max2){
-            return index;
+
+        if(secondLargest*2 <= largest){
+            return idx;
         }else{
             return -1;
         }
-        
     }
 };

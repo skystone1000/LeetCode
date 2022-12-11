@@ -1,5 +1,9 @@
 // LeetCode Arrays & Strings - 7
 // #0067 Add Binary
+// https://leetcode.com/problems/add-binary/description/
+
+#include<bits/stdc++.h>
+using namespace std;
 
 class Solution {
 public:

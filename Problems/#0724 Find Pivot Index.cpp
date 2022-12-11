@@ -32,3 +32,19 @@ public:
         return -1;
     }
 };
+
+// Method 3 - Alternative to method 2
+class Solution {
+public:
+    int pivotIndex(vector<int>& nums) {
+        int i=0;
+        int j=nums.size()-1;
+        int leftSum=0,rightSum=0;
+        while(i<j){
+            leftSum+=nums[i++];
+            rightSum+=nums[j--];
+        }
+        
+        // TODO: Traverse towards the side where sum is more
+    }
+};

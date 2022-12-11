@@ -1,5 +1,9 @@
 // LeetCode Arrays & Strings - 6
 // #0118 Pascal's Triangle
+// https://leetcode.com/problems/pascals-triangle/description/
+
+#include<bits/stdc++.h>
+using namespace std;
 
 class Solution {
 public:
