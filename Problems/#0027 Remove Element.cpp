@@ -6,7 +6,7 @@
 using namespace std;
 
 // Method 1
-class Solution {
+class Solution { // with for loop
 public:
     int removeElement(vector<int>& nums, int val) {
         int count = 0;
@@ -17,6 +17,21 @@ public:
             }
         }
         return count;
+    }
+};
+
+class Solution2 { // with while loop
+public:
+    int removeElement(vector<int>& nums, int val) {
+        int i=0,j=0;
+        while(j<nums.size()){
+            if(nums[j] == val){
+                j++;
+            }else{
+                nums[i++]=nums[j++];
+            }
+        }
+        return i;
     }
 };
 
