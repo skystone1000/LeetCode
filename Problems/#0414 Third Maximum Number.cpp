@@ -5,7 +5,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Method 1 - Hastset Extra space
+// Method 1 - Hastset (3 elements set so constant space)
+// O(n) - time
 class Solution {
 public:
     int thirdMax(vector<int>& nums) {
@@ -21,6 +22,7 @@ public:
 };
 
 // Method 2 - Three variables
+// O(n) - time
 class Solution {
 public:
     int thirdMax(vector<int>& nums) {
@@ -46,6 +48,7 @@ public:
 
 
 // Method 3 - In built Functions
+// O(nlogn) time as sorting
 class Solution {
 public:
     int thirdMax(vector<int>& nums) {
