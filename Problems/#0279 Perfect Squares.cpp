@@ -5,6 +5,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+
+// DP SOlution
 class Solution {
 public:
     int numSquares(int n) {
@@ -19,3 +21,5 @@ public:
         return num[n];
     }
 };
+
+// TODO: BFS Approach

@@ -5,26 +5,63 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Method 1 - optimal 2 pointer approach
+// Method 1 - Extra Space
 class Solution {
 public:
     void moveZeroes(vector<int>& nums) {
-        int updated = 0, curr = 0, zeroCount = 0;
+        int n = nums.size();
+        int numZeroes = 0;
+        vector<int> ans;
+        for (int i = 0; i < n; i++) {
+            if (nums[i] != 0) {
+                ans.push_back(nums[i]);
+            }else{
+                numZeroes++;
+            }
+        }
+
+        while (numZeroes--) {
+            ans.push_back(0);
+        }
+
+        for (int i = 0; i < n; i++) {
+            nums[i] = ans[i];
+        }
+    }
+};
+
+// Method 2 - optimal 2 pointer approach
+class Solution {
+public:
+    void moveZeroes(vector<int>& nums) {
+        int lastNonZeroFoundAt = 0;
         for(int i=0;i<nums.size();i++){
             if(nums[i] != 0){
-                nums[updated] = nums[i];
-                updated++;
-            }else {
-                zeroCount++;
+                nums[lastNonZeroFoundAt] = nums[i];
+                lastNonZeroFoundAt++;
             }
         }
         
-        for(int i=nums.size()-zeroCount;i<nums.size();i++)
+        for(int i=lastNonZeroFoundAt;i<nums.size();i++)
             nums[i] = 0;        
     }
 };
 
-// Method 2 - Inbuilt Functions
+// Method 3 - Swapping
+class Solution {
+public:
+    void moveZeroes(vector<int>& nums) {
+        int lastNonZeroFoundAt = 0;
+        for (int cur = 0; cur < nums.size(); cur++) {
+            if (nums[cur] != 0) {
+                swap(nums[lastNonZeroFoundAt], nums[cur]);
+                lastNonZeroFoundAt++;
+            }
+        }
+    }
+};
+
+// Method 4 - Inbuilt Functions
 class Solution {
 public:
     void moveZeroes(vector<int>& nums) {
@@ -42,3 +79,4 @@ public:
         }
     }
 };
+
