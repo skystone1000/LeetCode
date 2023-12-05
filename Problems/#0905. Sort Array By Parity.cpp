@@ -6,7 +6,27 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Method 1 - No extra space 2 pointer approach
+// Approach 4: In-Place QuickSort
+class Solution {
+public:
+    vector<int> sortArrayByParity(vector<int>& nums) {
+        int i=0, j=nums.size()-1;
+        while(i<j){
+            if(nums[i]%2 > nums[j]%2){
+                swap(nums[i],nums[j]);
+            }
+            if(nums[i]%2 == 0)
+                i++;
+            if(nums[j]%2 == 1)
+                j--;
+        }
+
+        return nums;
+    }
+};
+
+
+// Method 3 - Optimal 2 pointer approach
 class Solution {
 public:
     vector<int> sortArrayByParity(vector<int>& A) {
@@ -22,7 +42,7 @@ public:
 };
 
 
-// Method 2 - Extra space 2 pointer approach
+// Method 2 - Extra space 1 Pass
 class Solution {
 public:
     vector<int> sortArrayByParity(vector<int>& nums) {
@@ -40,3 +60,22 @@ public:
         return ans;
     }
 };
+
+// Approach 1: Extra Space 2 pass
+class Solution {
+public:
+    vector<int> sortArrayByParity(vector<int>& nums) {
+        vector<int> ans;
+
+        for(int i=0;i<nums.size();i++)
+            if(nums[i]%2 == 0)
+                ans.push_back(nums[i]);
+
+        for(int i=0;i<nums.size();i++)
+            if(nums[i]%2 == 1)
+                ans.push_back(nums[i]);
+
+        return ans;
+    }
+};
+
