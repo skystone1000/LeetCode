@@ -1,31 +1,51 @@
-// Company Amazon
-// 01 #0001 Two Sum
+// #0001 Two Sum
 // https://leetcode.com/problems/two-sum/
+// Company Tag - 01 Amazon, Google
 
 #include<bits/stdc++.h>
 using namespace std;
 
-// Approach 3 - Hashmap - O(n)
+// Approach 4 - Hashmap One pass 
+// Time Complexity: O(n), Space Complexity: O(n)
 class Solution {
 public:
-    vector<int> twoSum(vector<int>& nums, int target) {
-        vector<int> ans;
-        unordered_map<int,int> seen;
-        for(int i=0;i<nums.size();i++){
-            if(seen.find(target - nums[i]) != seen.end()){
-                ans.push_back(i);
-                ans.push_back(seen[target - nums[i]]);
-                return ans;
-            }else{
-                seen.insert({nums[i],i});
+    vector<int> twoSum(vector<int> &nums, int target) {
+        unordered_map<int, int> hash;
+        for (int i = 0; i < nums.size(); ++i) {
+            int complement = target - nums[i];
+            if (hash.find(complement) != hash.end()) {
+                return {hash[complement], i};
             }
+            hash[nums[i]] = i;
         }
-        return ans;
+        // Return an empty vector if no solution is found
+        return {};
     }
 };
 
-/*
-// Approach 2 - Sorting - O(nlogn)
+// Approach 3: Two-pass Hash Table
+// Time Complexity: O(n), Space Complexity: O(n) 
+class Solution {
+public:
+    vector<int> twoSum(vector<int> &nums, int target) {
+        unordered_map<int, int> hash;
+        for (int i = 0; i < nums.size(); i++) {
+            hash[nums[i]] = i;
+        }
+        for (int i = 0; i < nums.size(); i++) {
+            int complement = target - nums[i];
+            if (hash.find(complement) != hash.end() && hash[complement] != i) {
+                return {i, hash[complement]};
+            }
+        }
+        // If no valid pair is found, return an empty vector
+        return {};
+    }
+};
+
+
+// Approach 2 - Sorting - 
+// Time Complexity: O(nlogn), Space Complexity: O(1)
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -52,7 +72,8 @@ public:
     }
 };
 
-// Approach 1 - Brute Force - O(n^2)
+// Approach 1 - Brute Force
+// Time Complexity: O(n^2), Space Complexity: O(1)
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
@@ -71,4 +92,3 @@ public:
         return ans;
     }
 };
-*/
