@@ -21,6 +21,68 @@ public:
 };
 
 
+// Approach 2: Using previously established next pointers
+// Time Complexity: O(N), Space Complexity: O(1)
+class Solution {
+public:
+    Node* connect(Node* root) {
+        if (root == nullptr) {
+            return root;
+        }
+        Node* leftmost = root;
+        while (leftmost->left != nullptr) {
+            Node* head = leftmost;
+            while (head != nullptr) {
+                // CONNECTION 1
+                head->left->next = head->right;
+                // CONNECTION 2
+                if (head->next != nullptr) {
+                    head->right->next = head->next->left;
+                }
+                head = head->next;
+            }
+            leftmost = leftmost->left;
+        }
+        return root;
+    }
+};
+
+
+
+// Approach 1: Level Order Traversal (BFS)
+// Time Complexity: O(N), Space Complexity: O(N)
+class Solution {
+public:
+    Node* connect(Node* root) {
+        if (root == nullptr) {
+            return root;
+        }
+        queue<Node*> Q;
+        Q.push(root);
+        while (Q.size() > 0) {
+            int size = Q.size();
+            for (int i = 0; i < size; i++) {
+                Node* node = Q.front();
+                Q.pop();
+                if (i < size - 1) {
+                    node->next = Q.front();
+                }
+                if (node->left != nullptr) {
+                    Q.push(node->left);
+                }
+                if (node->right != nullptr) {
+                    Q.push(node->right);
+                }
+            }
+        }
+        return root;
+    }
+};
+
+
+
+
+// Old Approach
 class Solution {
 public:
     Node* connect(Node* root) {
