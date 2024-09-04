@@ -2,17 +2,20 @@
 // AIE 6.5 #0145 Binary Tree Postorder Traversal
 // https://leetcode.com/problems/binary-tree-postorder-traversal/
 
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
+#include <bits/stdc++.h>
+using namespace std;
+
+// Definition for a binary tree node.
+struct TreeNode
+{
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode() : val(0), left(nullptr), right(nullptr) {}
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+};
+
 
 // One Stack Solution
 class Solution {
@@ -39,7 +42,7 @@ public:
     }
 };
 
-/* 
+
 // Iterative
 // Two Stacks Solution - Time - O(n)  Space - O(n)
 class Solution {
@@ -69,9 +72,9 @@ public:
         
         return postOrd;
     }
-};*/
+};
 
-/* 
+
 // Time - O(n)  Space - O(n) (Stack frame of recursive call)
 class Solution {
 public:
@@ -91,4 +94,3 @@ public:
         ans.push_back(root->val);
     }
 };
-*/
