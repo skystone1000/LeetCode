@@ -4,9 +4,9 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Method 1 - DFS
-// Runtime: 48 ms, faster than 19.53% of C++ online submissions for Number of Provinces.
-// Memory Usage: 13.7 MB, less than 62.95% of C++ online submissions for Number of Provinces.
+// Approach 1: Depth First Search
+// Here n is the number of cities.
+// Time complexity: O(n^2), Space complexity: O(n)
 class Solution {
 public:
     int findCircleNum(vector<vector<int>>& isConnected) {
@@ -34,8 +34,108 @@ public:
     }
 };
 
+// Approach 2: Breadth First Search
+// Time complexity: O(n^2), Space complexity: O(n)
+class Solution {
+public:
+    void bfs(int node, vector<vector<int>>& isConnected, vector<bool>& visit) {
+        queue<int> q;
+        q.push(node);
+        visit[node] = true;
 
-// Method 2 - Union Find
+        while (!q.empty()) {
+            node = q.front();
+            q.pop();
+
+            for (int i = 0; i < isConnected.size(); i++) {
+                if (isConnected[node][i] && !visit[i]) {
+                    q.push(i);
+                    visit[i] = true;
+                }
+            }
+        }
+    }
+
+    int findCircleNum(vector<vector<int>>& isConnected) {
+        int n = isConnected.size();
+        int numberOfComponents = 0;
+        vector<bool> visit(n);
+
+        for (int i = 0; i < n; i++) {
+            if (!visit[i]) {
+                numberOfComponents++;
+                bfs(i, isConnected, visit);
+            }
+        }
+
+        return numberOfComponents;
+    }
+};
+
+// Approach 3: Union-find
+// Time complexity: O(n^2), Space complexity: O(n)
+class UnionFind {
+public:
+    UnionFind(int sz) : root(sz), rank(sz), count(sz) {
+        for (int i = 0; i < sz; i++) {
+            root[i] = i;
+            rank[i] = 1;
+        }
+    }
+
+    int find(int x) {
+        if (x == root[x]) {
+            return x;
+        }
+        return root[x] = find(root[x]);
+    }
+
+    void unionSet(int x, int y) {
+        int rootX = find(x);
+        int rootY = find(y);
+        if (rootX != rootY) {
+            if (rank[rootX] > rank[rootY]) {
+                root[rootY] = rootX;
+            } else if (rank[rootX] < rank[rootY]) {
+                root[rootX] = rootY;
+            } else {
+                root[rootY] = rootX;
+                rank[rootX] += 1;
+            }
+            count--;
+        }
+    }
+
+    int getCount() {
+        return count;
+    }
+
+private:
+    vector<int> root;
+    vector<int> rank;
+    int count;
+};
+
+class Solution {
+public:
+    int findCircleNum(vector<vector<int>>& isConnected) {
+        if (isConnected.size() == 0) {
+            return 0;
+        }
+        int n = isConnected.size();
+        UnionFind uf(n);
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (isConnected[i][j] == 1) {
+                    uf.unionSet(i, j);
+                }
+            }
+        }
+        return uf.getCount();
+    }
+};
+
+// Method 2 - Union Find (OLD)
 // Runtime: 45 ms, faster than 23.29% of C++ online submissions for Number of Provinces.
 // Memory Usage: 13.6 MB, less than 87.84% of C++ online submissions for Number of Provinces.
 class Solution {

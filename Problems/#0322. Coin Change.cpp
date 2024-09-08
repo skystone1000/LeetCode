@@ -1,64 +1,101 @@
-// Company Amazon
-// 38 #0322. Coin Change
+// #0322. Coin Change
 // https://leetcode.com/problems/coin-change/
+// Company Tag - 38 Amazon
 
-// DP Bottom Up Approach
+#include<bits/stdc++.h>
+using namespace std;
+
+
+// Approach 3 (Dynamic programming - Bottom up) [Accepted]
+// Time complexity : O(S∗n), Space complexity : O(S)
 class Solution {
 public:
-	int coinChange(vector<int>& coins, int amount) {
-		// This table will store the answer to our sub problems
-		vector<int> dp(amount + 1, amount + 1);
-
-		/*
+    int coinChange(vector<int>& coins, int amount) {
+        int max = amount + 1;
+        vector<int> dp(amount + 1, max);  // Initialize with "infinity"
+        /*
 		The answer to making change with minimum coins for 0
 		will always be 0 coins no matter what the coins we are
 		given are
 		*/
-		dp[0] = 0;
+        dp[0] = 0;
 
-		// Solve every subproblem from 1 to amount
-		for (int i = 1; i <= amount; i++) {
-			// For each coin we are given
-			for (int j = 0; j < coins.size(); j++) {
-				// If it is less than or equal to the sub problem amount
-				if (coins[j] <= i) {
-					// Try it. See if it gives us a more optimal solution
-					dp[i] = min(dp[i], dp[i - coins[j]] + 1);
-				}
-			}
-		}
+        for (int i = 1; i <= amount; ++i) { // Solve every subproblem from 1 to amount
+            for (int coin : coins) { // For each coin we are given
+                if (coin <= i) { // If it is less than or equal to the sub problem amount
+                    dp[i] = min(dp[i], dp[i - coin] + 1);  // See if it gives us a more optimal solution
+                }
+            }
+        }
 
-		/*
+        /*
 		dp[amount] has our answer. If we do not have an answer then dp[amount]
 		will be amount + 1 and hence dp[amount] > amount will be true. We then
 		return -1.
-
 		Otherwise, dp[amount] holds the answer
 		*/
-		return dp[amount] > amount ? -1 : dp[amount];
-	}
+
+        return dp[amount] > amount ? -1 : dp[amount];
+    }
 };
 
-// DP Top Down Approach
-class Solution2 {
+
+// Approach 2 (Dynamic programming - Top down) [Accepted]
+// Time complexity : O(S∗n), Space complexity : O(S)
+class Solution {
 public:
     int coinChange(vector<int>& coins, int amount) {
-        int n = coins.size();
-        int dp[n+1][amount+1];
-        
-        for(int i=0;i<=n;i++){
-            for(int j=0;j<=amount;j++){
-                if(j==0)
-                    dp[i][j] = 0;
-                else if(i==0)
-                    dp[i][j] = 1e5;
-                else if (coins[i-1] > j)
-                    dp[i][j] = dp[i-1][j];
-                else 
-                    dp[i][j] = min(1+dp[i][j-coins[i-1]], dp[i-1][j]);
+        if (amount < 1) return 0;
+        vector<int> count(amount, 0);  // Memoization array
+        return coinChangeHelper(coins, amount, count);
+    }
+
+private:
+    int coinChangeHelper(vector<int>& coins, int rem, vector<int>& count) {
+        if (rem < 0) return -1;
+        if (rem == 0) return 0;
+        if (count[rem - 1] != 0) return count[rem - 1];  // Return memoized result
+
+        int minCoins = INT_MAX;
+        for (int coin : coins) {
+            int res = coinChangeHelper(coins, rem - coin, count);
+            if (res >= 0 && res < minCoins) {
+                minCoins = 1 + res;
             }
         }
-        
-        return dp[n][amount] > 1e4 ? -1:dp[n][amount];
+
+        count[rem - 1] = (minCoins == INT_MAX) ? -1 : minCoins;
+        return count[rem - 1];
+    }
+};
+
+
+// Approach 1 (Brute force) [Time Limit Exceeded]
+// S is the amount, n is denomination count
+// Time complexity : O(S^n), Space complexity : O(n)
+class Solution {
+public:
+    int coinChange(vector<int>& coins, int amount) {
+        return coinChangeHelper(0, coins, amount);
+    }
+
+private:
+    int coinChangeHelper(int idxCoin, vector<int>& coins, int amount) {
+        if (amount == 0) return 0;
+        if (idxCoin < coins.size() && amount > 0) {
+            int maxVal = amount / coins[idxCoin];
+            int minCost = INT_MAX;
+
+            for (int x = 0; x <= maxVal; ++x) {
+                if (amount >= x * coins[idxCoin]) {
+                    int res = coinChangeHelper(idxCoin + 1, coins, amount - x * coins[idxCoin]);
+                    if (res != -1)
+                        minCost = min(minCost, res + x);
+                }
+            }
+
+            return (minCost == INT_MAX) ? -1 : minCost;
+        }
+        return -1;
     }
 };
