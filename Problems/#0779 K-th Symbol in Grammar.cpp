@@ -1,6 +1,11 @@
 // #0779. K-th Symbol in Grammar
 // https://leetcode.com/problems/k-th-symbol-in-grammar/
 
+#include<bits/stdc++.h>
+using namespace std;
+
+// Approach 2: Recursion
+// Time complexity: O(n), Space complexity: O(n)
 class Solution {
 public:
     int kthGrammar(int N, int K) {
